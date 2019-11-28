@@ -24,11 +24,15 @@ $(document).on("pagecreate", "#page1", function () {
 		updateFreq(freq);
 	
 	});
+
+	function startSensor();
+
 	
 });
 
 
 function startSensor() {
+	alert("Working");
 	watchID = navigator.accelerometer.watchAcceleration( accelerometerSuccess, accelerometerError, accelerometerOptions);
 }
 
