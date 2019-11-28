@@ -11,10 +11,13 @@ $(document).on("pagecreate", "#page1", function () {
 	//Setup listener for the toggle switch
 	$("#flipswitch").on("change", function() {
 		
-		if($("select#flipswitch").val() == "on"){
-
+		if($("#flipswitch").val() == "on"){
 
 			startSensor();
+
+		}else if($("#flipswitch").val() == "off"){
+
+			stopSensor();
 
 		}
 
@@ -36,17 +39,7 @@ $(document).on("pagecreate", "#page1", function () {
 	
 	});
 
-	
 
-
-
-
-
-
-
-
-
-	startSensor();
 
 });
 
