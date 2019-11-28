@@ -25,15 +25,17 @@ $(document).on("pagecreate", "#page1", function () {
 	
 	});
 
-	function startSensor();
+	startSensor();
 
-	
 });
 
 
 function startSensor() {
-	alert("Working");
+
+	
 	watchID = navigator.accelerometer.watchAcceleration( accelerometerSuccess, accelerometerError, accelerometerOptions);
+	alert("Working");
+
 }
 
 
